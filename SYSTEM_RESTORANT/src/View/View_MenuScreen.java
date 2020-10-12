@@ -22,17 +22,19 @@ public class View_MenuScreen {
        
        boolean menu = true;
        while(menu){
-           int choosen = Integer.parseInt(JOptionPane.showInputDialog(null, "Selamat Datang!!! \nMenu: \n1. Mahasiswa \n2. Staff" ));
-//           switch(choosen){
-//               case 1: new MahasiswaScreen();
-//                    break;
-//               case 2: new StaffScreen();
-//                    break;
-//               case 3: menu = false;
-//                    break;
+           int choosen = Integer.parseInt(JOptionPane.showInputDialog(null, "Selamat Datang!!! \nMenu: \n1. Customers \n2.  Cashier \n3. Manager" ));
+           switch(choosen){
+               case 1: new View_MenuCustomers();
+                    break;
+               case 2: new View_MenuCashier();
+                    break;
+               case 3: new View_MenuManager();
+                    break;
+               case 4: menu = false;
+                    break;
 //           }
        }
     }
 }
-
+    }
 }
