@@ -1,0 +1,43 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Model.Menu;
+
+/**
+ *
+ * @author A442UF
+ */
+public class Order extends stockMakanan {
+    String ID_Order;
+    int Jumlah_Makanan;
+    
+    public Order(){
+    }
+
+    public String getID_Order() {
+        return ID_Order;
+    }
+
+    public void setID_Order(String ID_Order) {
+        this.ID_Order = ID_Order;
+    }
+
+    public int getJumlah_Makanan() {
+        return Jumlah_Makanan;
+    }
+
+    public void setJumlah_Makanan(int Jumlah_Makanan) {
+        this.Jumlah_Makanan = Jumlah_Makanan;
+    }
+
+    public String getID_Makanan() {
+        return ID_Makanan;
+    }
+
+    public void setID_Makanan(String ID_Makanan) {
+        this.ID_Makanan = ID_Makanan;
+    }
+
+}
