@@ -6,7 +6,7 @@
 package View.GUI.Menu;
 
 import View.GUIMenu.Screen;
-import View.GUIMenu.screenCustomer;
+import View.GUI.Menu.screenCustomer;
 import View.GUI.OrderMakanan.screenMakanan;
 import View.GUI.OrderMakanan.screenMinuman;
 import View.GUI.OrderMakanan.screenTopping;
@@ -105,7 +105,6 @@ public class screenOrderMakanan {
         });
         frame.add(exit);
         
-        frame.setSize(500, 700);
         frame.setLayout(null);
         frame.setVisible(true);
     }
