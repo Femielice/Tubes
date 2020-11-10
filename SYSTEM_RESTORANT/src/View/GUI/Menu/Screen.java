@@ -6,7 +6,8 @@
 package View.GUIMenu;
 
 
-import Model.Menu.Order;
+import Model.Order;
+import View.GUI.Menu.screenCustomer;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
