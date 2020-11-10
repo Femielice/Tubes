@@ -23,6 +23,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 /**
  *
@@ -94,6 +95,31 @@ public class screenMakanan {
         friedChickenImage = new JButton(new ImageIcon(resizeImage("image/fried chicken.jpg")));
         friedChickenImage.setBounds(280, 330, 150, 60);
         frame.add(friedChickenImage);
+        
+        JLabel labelPesanan;
+        labelPesanan = new JLabel("Pesanan");
+        labelPesanan.setBounds(50, 400, 70, 30);
+        frame.add(labelPesanan);
+        
+        JTextField Pesanan;
+        Pesanan = new JTextField();
+        Pesanan.setBounds(50, 430, 150, 30);
+        frame.add(Pesanan);
+        
+        JLabel labelJumlah;
+        labelJumlah = new JLabel("Jumlah");
+        labelJumlah.setBounds(210, 400, 70, 30);
+        frame.add(labelJumlah);
+     
+        JTextField Jumlah;
+        Jumlah = new JTextField();
+        Jumlah.setBounds(210, 430, 60, 30);
+        frame.add(Jumlah);
+        
+        JButton input;
+        input = new JButton("Input");
+        input.setBounds(50, 470, 100, 30);
+        frame.add(input);
         
         JButton back;
         back = new JButton("Back");
