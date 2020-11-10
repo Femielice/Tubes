@@ -3,12 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package View.GUIMenu;
+package View.GUI.Menu;
 
 import View.GUI.Menu.screenMembership;
 import View.GUI.Menu.screenOrderMakanan;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -52,18 +55,26 @@ public class screenCustomer {
         });
         frame.add(inputMember);
         
-        JButton managementStock;
-        managementStock = new JButton("Management Stock");
-        managementStock.setBounds(166, 200, 170, 30);
-        frame.add(managementStock);
+        JButton managemenStock;
+        managemenStock = new JButton("Management Stock");
+        managemenStock.setBounds(166, 200, 170, 30);
+        managemenStock.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    new screenStock();
+                } catch (IOException ex) {
+                    Logger.getLogger(screenCustomer.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }   
+        });
+        frame.add(managemenStock);
         
         JButton exit;
         exit = new JButton("Exit");
         exit.setBounds(355, 500, 70, 30);
         frame.add(exit);
-        
-        
-        frame.setSize(500, 700);
+   
         frame.setLayout(null);
         frame.setVisible(true);
     
